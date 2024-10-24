@@ -5,6 +5,11 @@ const userRoutes = require("./routes/userRoutes");
 const cartRoutes = require("./routes/cartRoutes");
 const { connectDB } = require("./config/db");
 const cors = require("cors");
+app.use(cors({
+  origin: 'https://joyful-madeleine-9052d7.netlify.app',  // replace with your actual Netlify frontend URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
 
 connectDB();
 
