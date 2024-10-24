@@ -12,7 +12,7 @@ connectDB();
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+//app.use(cors());
 app.use(cors({
   origin: 'https://joyful-madeleine-9052d7.netlify.app',  // replace with your actual Netlify frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
