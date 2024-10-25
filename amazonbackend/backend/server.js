@@ -20,7 +20,7 @@ app.use(cors({
 }));
 
 app.get("/", (req, res) => {
-  res.json({ message: "API running..." });
+  res.json({ message: "API running...gk" });
 });
 
 app.use("/api/products", productRoutes);
